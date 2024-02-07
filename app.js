@@ -1,12 +1,15 @@
 
+
 function somador(){
     var resultAtual = parseInt(document.getElementById("resultAtual").value);
-
-    if(resultAtual % 2 === 0){
-        document.getElementById("resultado").innerText = "o numero "+ resultAtual+"é PAR";
+    var sum = 0;
+    var i= 0 ;
+    for( i= 0 ;i <= resultAtual; i++){
+    sum += i;
+     
     }
-    else{
-        document.getElementById("resultado").innerText = "o numero é "+ resultAtual+" IMPAR";
-    }
-
+       
+    document.getElementById("resultado").innerText = "A Ssoma total é "+sum;
+    
+    
 }
